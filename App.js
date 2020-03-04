@@ -21,9 +21,18 @@ import FeelingComponent from './src/components/FeelingComponent';
 
 const App = () => {
   return (
+    // bài tập giao diện login trường học
     // <LoginUserComponent />
+    
+    // bài tập giao diện login Firebase app
     // <FireBaseLoginComponent />
+    
+    // bài tập setState emoji
     <FeelingComponent />
+
+    // bài tập setState chọn kính thời trang
+    
+
   );
   
 };
