@@ -18,6 +18,7 @@ import {
 import LoginUserComponent from './src/components/LoginUserComponent'
 import FireBaseLoginComponent from './src/components/FireBaseLoginComponent';
 import FeelingComponent from './src/components/FeelingComponent';
+import SunglassesShopComponent from './src/components/SunglassesShopComponent';
 
 const App = () => {
   return (
@@ -28,10 +29,10 @@ const App = () => {
     // <FireBaseLoginComponent />
     
     // bài tập setState emoji
-    <FeelingComponent />
+    // <FeelingComponent />
 
     // bài tập setState chọn kính thời trang
-    
+    <SunglassesShopComponent />
 
   );
   
