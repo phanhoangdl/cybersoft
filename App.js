@@ -28,12 +28,8 @@ const App = () => {
     // bài tập giao diện login Firebase app
     // <FireBaseLoginComponent />
     
-    // bài tập setState emoji
-    // <FeelingComponent />
-
-    // bài tập setState chọn kính thời trang
-    <SunglassesShopComponent />
-
+    //bài tập setState emoji
+    <FeelingComponent />
   );
   
 };
