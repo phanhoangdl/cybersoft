@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Children } from 'react'
 import { Text, View, TouchableOpacity, Image } from 'react-native'
 import { Grid, Row, Col } from 'react-native-easy-grid'
 
@@ -22,6 +22,13 @@ export default class FeelingComponent extends Component {
     handleE5Click = () => {
         this.setState({ feeling: require('../assets/images/emoji/e5.png') })
     }
+
+    handleClick = (source) => {
+        
+        let newFeeling = {feeling:source};
+        console.log(this.state)
+        this.setState(newFeeling)
+    }
     render() {
         return (
             <Grid>
@@ -30,7 +37,7 @@ export default class FeelingComponent extends Component {
                 <Image source={this.state.feeling} />
                 </Row>
                 <Row style={{ flex: 4, justifyContent: 'center', alignItems: 'center' }}>
-                    <TouchableOpacity onPress={this.handleE1Click}><Image source={require('../assets/images/emoji/e1.png')} style={{ width: 50, height: 50 }} /></TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.handleClick(10)} ><Image source={require('../assets/images/emoji/e1.png')} style={{ width: 50, height: 50 }} /></TouchableOpacity>
                     <TouchableOpacity onPress={this.handleE2Click}><Image source={require('../assets/images/emoji/e2.png')} style={{ width: 50, height: 50 }} /></TouchableOpacity>
                     <TouchableOpacity onPress={this.handleE3Click}><Image source={require('../assets/images/emoji/e3.png')} style={{ width: 50, height: 50 }} /></TouchableOpacity>
                     <TouchableOpacity onPress={this.handleE4Click}><Image source={require('../assets/images/emoji/e4.png')} style={{ width: 50, height: 50 }} /></TouchableOpacity>
