@@ -29,7 +29,10 @@ const App = () => {
     // <FireBaseLoginComponent />
     
     //bài tập setState emoji
-    <FeelingComponent />
+    // <FeelingComponent />
+
+    //bài tập shop kính
+    <SunglassesShopComponent />
   );
   
 };
