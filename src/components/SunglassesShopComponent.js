@@ -65,7 +65,7 @@ export default class SunglassesShopComponent extends Component {
                             <Image style={{width:'55%',height:'35%',marginTop:20}} opacity={0.9} source={this.state.sunglass} />
                         </Row>
                         <Row size={2}>
-                            <View style={{ backgroundColor: 'black', width: '100%'}} opacity={0.4}>
+                            <View style={{ backgroundColor: 'rgba(0,0,0,0.4)', width: '100%'}}>
                                 <Grid>
                                     <Row style={{paddingLeft:20}}><Text style={{ color: '#03ff78', fontSize: 30, fontWeight: 'bold', opacity: 1 }}>{this.state.name}</Text></Row>
                                     <Row style={{paddingLeft:10}}><Text style={{ color: '#fff203', fontSize: 30, fontWeight: 'bold' }}>${this.state.price}</Text></Row>
